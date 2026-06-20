@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>700</width><height>560</height></rect>
+  </property>
+  <property name="windowTitle"><string>ENSIA - UDRMS</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+
+      <!-- ===================== STUDENTS TAB ===================== -->
+      <widget class="QWidget" name="tabStudents">
+       <attribute name="title"><string>Students</string></attribute>
+       <layout class="QFormLayout" name="formStudents">
+        <item row="0" column="0"><widget class="QLabel" name="label1"><property name="text"><string>Student ID:</string></property></widget></item>
+        <item row="0" column="1"><widget class="QLineEdit" name="lineStuId"/></item>
+
+        <item row="1" column="0"><widget class="QLabel" name="label2"><property name="text"><string>Full Name:</string></property></widget></item>
+        <item row="1" column="1"><widget class="QLineEdit" name="lineStuName"/></item>
+
+        <item row="2" column="0"><widget class="QLabel" name="label3"><property name="text"><string>Academic Year:</string></property></widget></item>
+        <item row="2" column="1"><widget class="QLineEdit" name="lineStuYear"/></item>
+
+        <item row="3" column="0">
+         <widget class="QPushButton" name="btnAddStudent"><property name="text"><string>Add Student</string></property></widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QPushButton" name="btnViewStudents"><property name="text"><string>View Students</string></property></widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QPushButton" name="btnRemoveStudent"><property name="text"><string>Remove Student</string></property></widget>
+        </item>
+       </layout>
+      </widget>
+
+      <!-- ===================== DORMITORIES TAB ===================== -->
+      <widget class="QWidget" name="tabDorms">
+       <attribute name="title"><string>Dormitories</string></attribute>
+       <layout class="QVBoxLayout" name="vboxDorms">
+
+        <item>
+         <layout class="QFormLayout" name="formDormAdd">
+          <item row="0" column="0"><widget class="QLabel" name="lblDormName"><property name="text"><string>Dorm Name:</string></property></widget></item>
+          <item row="0" column="1"><widget class="QLineEdit" name="lineDormName"/></item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="btnAddDorm"><property name="text"><string>Add Dormitory</string></property></widget>
+          </item>
+         </layout>
+        </item>
+
+        <item>
+         <widget class="QLabel" name="lblRoomSection"><property name="text"><string>--- Add Room ---</string></property></widget>
+        </item>
+        <item>
+         <layout class="QFormLayout" name="formRoom">
+          <item row="0" column="0"><widget class="QLabel" name="lblRoomDorm"><property name="text"><string>Dorm Name:</string></property></widget></item>
+          <item row="0" column="1"><widget class="QLineEdit" name="lineRoomDorm"/></item>
+          <item row="1" column="0"><widget class="QLabel" name="lblRoomNum"><property name="text"><string>Room Number:</string></property></widget></item>
+          <item row="1" column="1"><widget class="QLineEdit" name="lineRoomNum"/></item>
+          <item row="2" column="0"><widget class="QLabel" name="lblRoomCap"><property name="text"><string>Capacity:</string></property></widget></item>
+          <item row="2" column="1"><widget class="QLineEdit" name="lineRoomCap"/></item>
+          <item row="3" column="0">
+           <widget class="QPushButton" name="btnAddRoom"><property name="text"><string>Add Room</string></property></widget>
+          </item>
+         </layout>
+        </item>
+
+        <item>
+         <widget class="QLabel" name="lblAssignSection"><property name="text"><string>--- Assign Student to Room ---</string></property></widget>
+        </item>
+        <item>
+         <layout class="QFormLayout" name="formAssign">
+          <item row="0" column="0"><widget class="QLabel" name="lblAssignDorm"><property name="text"><string>Dorm Name:</string></property></widget></item>
+          <item row="0" column="1"><widget class="QLineEdit" name="lineAssignDorm"/></item>
+          <item row="1" column="0"><widget class="QLabel" name="lblAssignSid"><property name="text"><string>Student ID:</string></property></widget></item>
+          <item row="1" column="1"><widget class="QLineEdit" name="lineAssignSid"/></item>
+          <item row="2" column="0"><widget class="QLabel" name="lblAssignRoom"><property name="text"><string>Room Number:</string></property></widget></item>
+          <item row="2" column="1"><widget class="QLineEdit" name="lineAssignRoom"/></item>
+          <item row="3" column="0">
+           <widget class="QPushButton" name="btnAssign"><property name="text"><string>Assign Student</string></property></widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QPushButton" name="btnViewUniversity"><property name="text"><string>View All Info</string></property></widget>
+          </item>
+         </layout>
+        </item>
+
+       </layout>
+      </widget>
+
+      <!-- ===================== RESTAURANT TAB ===================== -->
+      <widget class="QWidget" name="tabRest">
+       <attribute name="title"><string>Restaurant</string></attribute>
+       <layout class="QFormLayout" name="formRest">
+        <item row="0" column="0"><widget class="QLabel" name="lblRestDorm"><property name="text"><string>Dorm Name:</string></property></widget></item>
+        <item row="0" column="1"><widget class="QLineEdit" name="lineRestDorm"/></item>
+
+        <item row="1" column="0"><widget class="QLabel" name="lblBreak"><property name="text"><string>Breakfast:</string></property></widget></item>
+        <item row="1" column="1"><widget class="QLineEdit" name="lineBreak"/></item>
+
+        <item row="2" column="0"><widget class="QLabel" name="lblLunch"><property name="text"><string>Lunch:</string></property></widget></item>
+        <item row="2" column="1"><widget class="QLineEdit" name="lineLunch"/></item>
+
+        <item row="3" column="0"><widget class="QLabel" name="lblDinner"><property name="text"><string>Dinner:</string></property></widget></item>
+        <item row="3" column="1"><widget class="QLineEdit" name="lineDinner"/></item>
+
+        <item row="4" column="0">
+         <widget class="QPushButton" name="btnSetMenu"><property name="text"><string>Set Menu</string></property></widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QPushButton" name="btnViewMenu"><property name="text"><string>View Menu</string></property></widget>
+        </item>
+       </layout>
+      </widget>
+
+      <!-- ===================== FILE TAB ===================== -->
+      <widget class="QWidget" name="tabFile">
+       <attribute name="title"><string>File</string></attribute>
+       <layout class="QVBoxLayout" name="vboxFile">
+        <item><widget class="QPushButton" name="btnSave"><property name="text"><string>Save Data to File</string></property></widget></item>
+        <item><widget class="QPushButton" name="btnLoad"><property name="text"><string>Load Data from File</string></property></widget></item>
+       </layout>
+      </widget>
+
+     </widget>
+    </item>
+
+    <!-- ===================== OUTPUT BOX (shared, below tabs) ===================== -->
+    <item>
+     <widget class="QLabel" name="lblOutput"><property name="text"><string>Output:</string></property></widget>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="textOutput">
+      <property name="readOnly"><bool>true</bool></property>
+     </widget>
+    </item>
+
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
